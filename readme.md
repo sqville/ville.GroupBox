@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/sqville/ville.GroupBox">
-    <img src="ville_GB.png" alt="Logo">
+    <img src="ville_GB.png" alt="Logo" width="300" height="123">
   </a>
 
   <h3 align="center"></h3>
