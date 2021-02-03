@@ -8,21 +8,16 @@
   <h3 align="center"></h3>
 
   <p align="center">
-    A groupbox control for the Qooxdoo JavaScript Framework
+    A collapsable groupbox control for the Qooxdoo JavaScript Framework
   </p>
 </p>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-**ville.GroupBox** is a [Qooxdoo](https://qooxdoo.org/) control. It brings a collapsable feature to the standard GroupBox control, and is designed to function across all screen sizes. 
+**ville.GroupBox** is a [Qooxdoo](https://qooxdoo.org/) desktop ui control. It brings a collapsable feature to the standard GroupBox control, and is designed to function across all screen sizes. 
 
-**Benefits**
-* 
-* 
-* 
-
-**Screen Shot**
+**Screen Shots**
 <img src="ville_GB_screencapture_02.PNG" alt="ville.GroupBox control for Qooxdoo - Example - Dashboard sections">
 <img src="ville_GB_screencapture_01.PNG" alt="ville.GroupBox control for Qooxdoo - Example - Action areas">
 <img src="ville_GB_screencapture_03.PNG" alt="ville.GroupBox control for Qooxdoo - Example - GroupBoxes used as list rows">
