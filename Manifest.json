@@ -2,7 +2,7 @@
   "$schema": "https://qooxdoo.org/schema/Manifest-1-0-0.json",
   "info": {
     "name": "ville.GroupBox",
-    "summary": "A Qooxdoo desktop control",
+    "summary": "A Qooxdoo desktop, collapsable GroupBox control",
     "description": "",
     "homepage": "",
     "license": "MIT license",
@@ -12,10 +12,10 @@
         "email": "(sqville)"
       }
     ],
-    "version": "1.0.1"
+    "version": "1.0.0"
   },
   "provides": {
-    "namespace": "ville.control.GroupBox",
+    "namespace": "ville.groupbox.GroupBox",
     "encoding": "utf-8",
     "class": "source/class",
     "resource": "source/resource",

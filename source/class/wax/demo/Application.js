@@ -82,7 +82,9 @@ qx.Class.define("wax.demo.Application",
       this._blocker = new qx.ui.core.Blocker(approot).set({color: "black", opacity: .08});
       
       // App's main Container (Composite) with Dock Layout 
-      var appcompdock = new qx.ui.container.Composite(new qx.ui.layout.Dock(0, 0)).set({backgroundColor: "transparent"});
+      var appdocklayout = new qx.ui.layout.Dock(0, 0);
+      //appdocklayout.setSort("x");
+      var appcompdock = new qx.ui.container.Composite(appdocklayout).set({backgroundColor: "transparent"});
       
       // Dock's North section (Canvas)
       var northhbox = this._northBox = new qx.ui.container.Composite(new qx.ui.layout.Canvas()).set({backgroundColor: "white", decorator : "topheader"});
@@ -97,15 +99,10 @@ qx.Class.define("wax.demo.Application",
       var southbox = new qx.ui.container.Composite(new qx.ui.layout.HBox(4)).set({alignY: "middle", padding: [0,4,0,4], decorator: "bottombar"});
 
       // West Scroll area to fit all menu items
-      var scrollwest = new qx.ui.container.Scroll();
-      scrollwest.set({padding: 0, margin: 0, contentPadding: [0,0,0,0]});
-
+      var scrollwest = new qx.ui.container.Scroll().set({minWidth: 230, allowStretchX: true, allowStretchY: true, padding: 0, margin: 0, contentPadding: [0,0,0,0]});
+      
       // Center Scroll area to fit all content
-      var scroll = new qx.ui.container.Scroll();
-      //var scroll = new qx.ui.core.scroll.NativeScrollBar("vertical");
-      scroll.set({padding: 0, margin: 0, contentPadding: [0,0,0,0]});
-      //scroll.setDragScrollSlowDownFactor(0);
-      //scroll.set({padding: 0, margin: 0});
+      var scroll = new qx.ui.container.Scroll().set({padding: 0, margin: 0, contentPadding: [0,0,0,0]});
 
       // === North Toolbar, Parts and Buttons ===
       var northtoolbar = new qx.ui.toolbar.ToolBar().set({backgroundColor: "white"});
@@ -160,9 +157,11 @@ qx.Class.define("wax.demo.Application",
       // Assemble all base pieces  
       scrollwest.add(westbox);
       scroll.add(centerbox);
+
       appcompdock.add(northhbox, {edge:"north"});
       appcompdock.add(scrollwest, {edge:"west"});
       appcompdock.add(scroll, {edge:"center"});
+
       approot.add(appcompdock, {edge: 0});
       profilemenu.add(switchmenubutton1);
       profilemenu.add(aboutmenubutton1);
