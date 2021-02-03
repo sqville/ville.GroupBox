@@ -1,0 +1,36 @@
+{
+ "$schema": "https://qooxdoo.org/schema/Manifest-1-0-0.json",
+  "info" :
+  {
+    "name" : "ville.GroupBox",
+
+    "summary" : "A Qooxdoo desktop control",
+    "description" : "",
+
+    "homepage" : "",
+
+    "license" : "MIT license",
+    "authors" : [
+  {
+    "name": "Chris Eskew",
+    "email": "(sqville)"
+  }
+],
+
+    "version" : "1.0.0"
+  },
+
+  "provides" :
+  {
+    "namespace"   : "ville.control.GroupBox",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation"
+  },
+
+  "requires": {
+    "@qooxdoo/framework": "^6.0.0-beta-20201001-1413",
+    "@qooxdoo/compiler" : "^1.0.0-beta-20201001-1413"
+  }
+}

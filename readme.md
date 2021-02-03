@@ -8,14 +8,14 @@
   <h3 align="center"></h3>
 
   <p align="center">
-    A control for the Qooxdoo JavaScript Framework
+    A groupbox control for the Qooxdoo JavaScript Framework
   </p>
 </p>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-**ville.GroupBox** is a [Qooxdoo](https://qooxdoo.org/) control.
+**ville.GroupBox** is a [Qooxdoo](https://qooxdoo.org/) control. It brings a collapsable feature to the standard GroupBox control, and is designed to function across all screen sizes. 
 
 **Benefits**
 * 
@@ -34,9 +34,10 @@ $ qx contrib update
 $ qx contrib list
 $ qx contrib install sqville/ville.GroupBox
 ```
-now you just have to modify your compile.json to enable the theme:
+to use the control as intended you must include Theme classes into your applications current theme. Include the two lines below at the top of your applications main function:
 ```sh
-Work in progress
+qx.Theme.include(qx.theme.manager.Appearance.getInstance().getTheme(), ville.groupbox.Appearance);
+qx.Theme.include(qx.theme.manager.Decoration.getInstance().getTheme(), ville.groupbox.Decoration);
 ```
 
 <!-- ROADMAP -->
