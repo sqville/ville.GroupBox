@@ -23,7 +23,9 @@
 * 
 
 **Screen Shot**
-<img src="ville_Clean_Form.PNG" alt="Screen shot example">
+<img src="ville_GB_screencapture_02.PNG" alt="ville.GroupBox control for Qooxdoo - Example - Dashboard sections">
+<img src="ville_GB_screencapture_01.PNG" alt="ville.GroupBox control for Qooxdoo - Example - Action areas">
+<img src="ville_GB_screencapture_03.PNG" alt="ville.GroupBox control for Qooxdoo - Example - GroupBoxes used as list rows">
 
 
 <!-- GETTING STARTED -->
