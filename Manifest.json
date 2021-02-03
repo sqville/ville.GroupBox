@@ -12,7 +12,7 @@
         "email": "(sqville)"
       }
     ],
-    "version": "1.0.1"
+    "version": "v1.0.0"
   },
   "provides": {
     "namespace": "ville.groupbox.GroupBox",
