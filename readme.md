@@ -27,9 +27,9 @@
 ## Using the Control in your Application
 To use the control in your application, go into the application root directory and install the library into your project:
 ```sh
-$ qx contrib update
-$ qx contrib list
-$ qx contrib install sqville/ville.GroupBox
+$ qx package update
+$ qx package list
+$ qx package install sqville/ville.GroupBox
 ```
 to use the control as intended you must include Theme classes into your applications current theme. Include the two lines below at the top of your applications main function:
 ```sh
