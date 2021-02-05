@@ -493,7 +493,7 @@ qx.Class.define("wax.demo.Application",
       var winAboutWax = this.__createDetailWindow();
 
       winAboutWax.getLayout().set({spacing: 20});
-      winAboutWax.set({caption: "About Wax", contentPadding: 24, status: "Github repo coming soon"});
+      winAboutWax.set({caption: "About Wax", contentPadding: 0, status: "Github repo coming soon"});
       var txtaboutwax = "Wax aims to be a rapid application development and prototyping tool/system. There's a spectrum of rapid-app-dev tools (or low-code tools) - Outsystems, Appian and Ionic on the high-end, Foundation, Gatsbyjs and SemanticUI on the other. Wax is currently not yet on this spectrum, but it does have an approach and supporting assets to begin the process of becoming a highly effective and useful app-dev/app-prototyping asset.<br><br><br>";
       txtaboutwax += "<span style='font-size: 16px;'>THE APPROACH (so far):</span><br><br>";
       txtaboutwax += "<b>Build Qooxdoo skeletons (and lots of them) that function on multiple devices or use case scenarios.</b> A typical use case - After meeting with the client and gathering initial requirements, the prototype developer generates an application using a skeleton (chosen from a long list of skeletons) that best meets the initial requirements. Just like website templates found on the web, Qooxdoo skeletons would encompass enough functionality to help produce a high fidelity prototype in a matter of a few days. There is the potential that a skeleton could also include mock data (json) and non-Qooxdoo scripts to set up a cloud backend (not yet proven out). Skeletons could even include non-Qooxdoo templates for native mobile frameworks such as React Native, Flutter and Felgo (easy to do since skeleton templates are just static files with mustache-like tags).<br><br>";
@@ -504,7 +504,7 @@ qx.Class.define("wax.demo.Application",
       txtaboutwax += "<span style='font-size: 16px;'>SPECIAL NOTE:</span><br><br>";
       txtaboutwax += "Skeletons and the demo browser are not new concepts to Qooxdoo. These features have been around since the beginning. The purpose of this writeup is to convey good-intent, thoughts and ideas on how to improve peoples work lives, and not meant to be critical or take credit for anything in anyway. The past and current qooxdoo core team have done, and are doing, phenomenal work. My thanks go out to them for making me look better than I really am - Cheers.";
       //var aboutbox = new qx.ui.container.Composite(new qx.ui.layout.VBox(10));
-      var aboutscroll = new qx.ui.container.Scroll().set({ allowStretchY: true, padding: 0, margin: 0, contentPadding: [0,0,0,0]});
+      var aboutscroll = new qx.ui.container.Scroll().set({ allowStretchY: true, padding: 0, margin: 0, contentPadding: [0,24,0,24]});
       var waxatom = new qx.ui.basic.Atom(txtaboutwax,"wax/demo/ville_Wax.png").set({rich: true, iconPosition: "top", gap: 30, paddingTop: 30});
       waxatom.getChildControl("icon").set({scale: true, width: 300, height: 106});
       waxatom.getChildControl("label").set({wrap: true});
