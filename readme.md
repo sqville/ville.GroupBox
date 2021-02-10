@@ -40,7 +40,7 @@ qx.Theme.include(qx.theme.manager.Decoration.getInstance().getTheme(), ville.gro
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+TBD
 
 
 <!-- LICENSE -->
