@@ -66,68 +66,6 @@ qx.Theme.define("wax.demo.theme.Appearance",
     },
 
     /*
-    "groupbox/open" :
-    {
-      include : "image",
-      style : function(states)
-      {
-        return {
-          height: 30,
-          decorator : states.opened ? "groupbox-open" : "groupbox-closed"
-        };
-      }
-    },
-
-    "groupbox-connected" : {
-      alias : "groupbox",
-      style : function(states)
-      {
-        return {
-          decorator  : "white-box",
-          contentPadding: 10
-        };
-      }
-    },
-
-    "groupbox-connected/legend" : {
-      include : "groupbox/legend",
-      style : function(states)
-      {
-        return {
-          font: "area-header",
-          paddingTop: 8,
-          paddingBottom: 8,
-          paddingLeft: 12
-        }
-      }
-    },
-
-    "groupbox-connected/frame" :
-    {
-      include : "groupbox/frame",
-      
-      style : function(states)
-      {
-        return {
-          marginTop : 30,
-          decorator  : "connected-top-box"
-        };
-      }
-    },
-
-    "groupbox-connected/open" :
-    {
-      include : "groupbox/open",
-      
-      style : function(states)
-      {
-        return {
-          height: 60
-        };
-      }
-    },*/
-
-    /*
     ---------------------------------------------------------------------------
       ville.MENUBUTTON
     ---------------------------------------------------------------------------
@@ -142,7 +80,7 @@ qx.Theme.define("wax.demo.theme.Appearance",
        var padding = [12, 6, 12, 19];
        //var textcolor = "#606060";
        var textcolor = "black";
-       var opacity = .75;
+       var opacity = .85;
 
        if (!states.disabled) {
          if (states.hovered && !states.pressed && !states.checked) {
