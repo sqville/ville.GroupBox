@@ -37,6 +37,11 @@ qx.Theme.include(qx.theme.manager.Appearance.getInstance().getTheme(), ville.gro
 qx.Theme.include(qx.theme.manager.Decoration.getInstance().getTheme(), ville.groupbox.Decoration);
 ```
 
+<!-- DEMOS -->
+## Demo
+
+See this control in action using the [Wax Demo App:](http://qooxdoo.org/qxl.packagebrowser/qxl.packagebrowser/demos/sqville/ville.GroupBox/waxdemo/)
+
 <!-- ROADMAP -->
 ## Roadmap
 
