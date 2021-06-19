@@ -230,7 +230,10 @@ qx.Class.define("wax.demo.Application",
       // GroubBox
       var groupbox1 = new ville.groupbox.GroupBox("First GroupBox", "wax/demo/baseline-directions_subway-24px.svg", true, true, false);
       groupbox1.setLayout(new qx.ui.layout.VBox());
-      var piechartimage = new qx.ui.basic.Image("wax/demo/pie_chart-24px.svg").set({scale: true, width: 272, height: 272});
+      //groupbox1.set({minWidth: 250, minHeight: 300});
+      
+      //var piechartimage = new qx.ui.basic.Image("wax/demo/pie_chart-24px.svg").set({scale: true, width: 272, height: 272});
+      var piechartimage = new qx.ui.basic.Image("wax/demo/d3js_piechart_01.svg").set({allowStretchX: true, allowStretchY: true, scale: true, minWidth: 400, minHeight: 250});
 
       var groupbox2 = new ville.groupbox.GroupBox("Second GroupBox", "wax/demo/local_airport-24px.svg", true, true, false);
       groupbox2.setLayout(new qx.ui.layout.VBox());

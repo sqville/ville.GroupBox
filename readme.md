@@ -40,7 +40,7 @@ qx.Theme.include(qx.theme.manager.Decoration.getInstance().getTheme(), ville.gro
 <!-- DEMOS -->
 ## Demo
 
-See this control in action using the [Wax Demo App:](http://qooxdoo.org/qxl.packagebrowser/qxl.packagebrowser/demos/sqville/ville.GroupBox/waxdemo/)
+See this control in action using the [Wax Demo App](http://qooxdoo.org/qxl.packagebrowser/qxl.packagebrowser/demos/sqville/ville.GroupBox/waxdemo/)
 
 <!-- ROADMAP -->
 ## Roadmap
