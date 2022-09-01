@@ -16,6 +16,10 @@
   "defaultTarget": "source",
   "locales": ["en"],
 
+  "environment" : {
+    "qx.nativeScrollBars" : true
+  },
+
   "applications": [
     {
       "class": "wax.demo.Application",

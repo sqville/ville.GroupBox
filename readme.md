@@ -40,7 +40,7 @@ qx.Theme.include(qx.theme.manager.Decoration.getInstance().getTheme(), ville.gro
 <!-- DEMOS -->
 ## Demo
 
-See this control in action using the [Wax Demo App](http://qooxdoo.org/qxl.packagebrowser/qxl.packagebrowser/demos/sqville/ville.GroupBox/waxdemo/)
+See this control in action using the [Wax Demo App](https://sqville.github.io/ville.GroupBox/published/) 
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -58,4 +58,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Chris Eskew - [@SQville](https://twitter.com/SQville) - email: chris.eskew@sqville.com
+Chris Eskew - [@SQville](https://twitter.com/SQville) - email: sqville@gmail.com

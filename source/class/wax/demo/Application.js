@@ -102,7 +102,13 @@ qx.Class.define("wax.demo.Application",
       var scrollwest = new qx.ui.container.Scroll().set({minWidth: 230, allowStretchX: true, allowStretchY: true, padding: 0, margin: 0, contentPadding: [0,0,0,0]});
       
       // Center Scroll area to fit all content
-      var scroll = new qx.ui.container.Scroll().set({padding: 0, margin: 0, contentPadding: [0,0,0,0]});
+      var scroll = new qx.ui.container.Scroll().set({ padding: 0, margin: 0, contentPadding: [0,0,0,0]});
+      //scroll.setScrollbarY("auto");
+     // var scroll = new wax.demo.Scroll().set({ padding: 0, margin: 0, contentPadding: [0,0,0,0]});
+      //var scroll = new qx.ui.container.Composite(new qx.ui.layout.Canvas()).set({width: 400, height: 600});
+     /* scroll.addListener("scroll", function() {
+        console.log("hello");
+      }, this)*/
 
       // === North Toolbar, Parts and Buttons ===
       var northtoolbar = new qx.ui.toolbar.ToolBar().set({backgroundColor: "white"});
