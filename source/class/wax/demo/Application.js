@@ -1017,6 +1017,9 @@ qx.Class.define("wax.demo.Application",
       var imgrenderer = new qx.ui.table.cellrenderer.Image(24,24);
       table.getTableColumnModel().setDataCellRenderer(0, imgrenderer);
 
+      var htmlrenderer = new qx.ui.table.cellrenderer.Html();
+      table.getTableColumnModel().setDataCellRenderer(3, htmlrenderer);
+
       table.getSelectionModel().setSelectionMode(qx.ui.table.selection.Model.MULTIPLE_INTERVAL_SELECTION);
 
       var tcm = table.getTableColumnModel();
@@ -1067,7 +1070,7 @@ qx.Class.define("wax.demo.Application",
       date = new Date(now + Math.random() * dateRange - dateRange / 2);
       rowData.push([ "wax/demo/round-sync-24px.svg", "In Progress", "005111888", "eThat Modernization", date ]);
       date = new Date(now + Math.random() * dateRange - dateRange / 2);
-      rowData.push([ "wax/demo/round-sync-24px.svg", "In Progress", "006003662", "eThis eThat Integration", date ]);
+      rowData.push([ "wax/demo/round-sync-24px.svg", "In Progress", "006003662", "eThis eThat Integration<br> and Modernization", date ]);
 
       return rowData;
     },
