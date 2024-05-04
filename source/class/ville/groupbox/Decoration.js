@@ -1,7 +1,5 @@
 /* ************************************************************************
 
-   Copyright: 2021 sqville
-
    License: MIT
 
    Authors: Chris Eskew (sqville)

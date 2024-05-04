@@ -1,12 +1,8 @@
 /* ************************************************************************
 
-Ville Software (SQville)
-
-Copyright: 2021 sqville
-
 License: MIT
 
-Authors: Chris Eskew (SQville) chris.eskew@sqville.com
+Authors: Chris Eskew (SQville) sqville@gmail.com
 
 ************************************************************************ */
 

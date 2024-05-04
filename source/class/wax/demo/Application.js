@@ -410,33 +410,6 @@ qx.Class.define("wax.demo.Application",
       var lblGalleryHeader = new qx.ui.basic.Label("My Default Gallery").set({font: "control-header"});
       gallerypage.add(lblGalleryHeader);
       
-      // Gallery Upload control - desktop only
-      if (qx.core.Environment.get("device.type") == "desktop"){
-        var ctrlUpload = new wax.demo.Upload("Drag and drop, or", "Browse", null);
-        ctrlUpload.set({
-          height: 120,
-          spacing: 20,
-          center: true,
-          demo : true
-        });
-        ctrlUpload.getChildControl("message").set({ icon: "wax/demo/cloud_upload-24px.svg", iconPosition: "top", gap: 0});
-        gallerypage.add(ctrlUpload);
-        var uploaddemorestore = new qx.ui.form.Button("Restore").set({allowGrowX: false});
-        uploaddemorestore.addListener("execute", function(){	
-          var progressbar = ctrlUpload.getChildControl("progressbar", true);
-          progressbar.setValue(0);
-        }, this);
-        var uploadprogress = new qx.ui.form.Button("+ 10%").set({allowGrowX: false});
-        uploadprogress.addListener("execute", function(){	
-          var progressbar = ctrlUpload.getChildControl("progressbar", true);
-          progressbar.setValue(progressbar.getValue()+10);
-        }, this);
-        var upldhbox = new qx.ui.container.Composite(new qx.ui.layout.HBox());
-        upldhbox.add(uploaddemorestore);
-        upldhbox.add(uploadprogress);
-        //gallerypage.add(upldhbox);
-      };
-
       // Add Flow of image objects - images are from "resource/wax/demo/gallery" folder
       var gallaryimageflow = new qx.ui.layout.Flow(6,6,"left");
       var gallerygroupboxcars = new ville.groupbox.GroupBox("Cars", "wax/demo/commute-24px.svg", true, true, false);
